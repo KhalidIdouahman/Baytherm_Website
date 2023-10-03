@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none; 
+    outline: none;
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
@@ -32,6 +35,21 @@
 }
 
 /* navbar design */
+
+/* this is a test to make the menu showed always , and it good but need more design */
+/* #main-header {
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 2% 6%;
+} */
+
+/* this is for the effect of changing the bg of menu when scrolling up */
+
+/* #main-header.scrolled {
+    background-color: rgb(207, 95, 95);
+    padding: 1rem 6%;
+} */
 
 nav {
     display: flex;
@@ -91,11 +109,15 @@ nav .fa {
 
 .text-box h1 {
     font-size: 52px;
+    /* animation */
+    animation-delay: 0.5s;
 }
 .text-box p {
     margin: 0.7rem 0 2.5rem;
     font-size: 0.9rem;
     color: var(--white);
+    /* animation */
+    animation-delay: 1s;
 }
 
 .text-box #title {
@@ -116,11 +138,33 @@ nav .fa {
     cursor: pointer;
 }
 
+.contact-btn.anim {
+    /* animation */
+    animation-delay: 1.5s;
+}
+
 .contact-btn:hover {
     border: 1px solid var(--main-red);
     background: var(--main-red);
     transition: .7s;
 }
+
+/* the animation */
+
+.anim {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*  */
 
 
 /* all the titles design */
@@ -282,7 +326,59 @@ p {
     padding: 0;
 }
 
+/* footer design */
 
+
+.footer {
+    background-color: var(--card-color);
+    padding: 5rem 5% 3rem;
+    /* height: 10rem; */
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(20rem , 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box h3 {
+    color: #000;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer .box-container .box p {
+    color: #000;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.footer .box-container .box a {
+    color: #000;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+
+
+.footer .box-container .box a i {
+    color: var(--main-red);
+    padding-right: 0.5rem;
+    transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.credit {
+    color: #000;
+    padding-top: 2.4rem;
+    margin-top: 2.4rem;
+    border-top: 0.1rem solid #000;
+    text-align: center;
+    font-size: 1.2rem;
+}
 
 
 
@@ -305,10 +401,21 @@ p {
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -200px;
-        text-align: left;
+        right: 0px;
+        text-align: center;
+        padding-top: 3rem;
         z-index: 2;
         transition: 1s;
+
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+
+    /* .navbar i {
+        transform: rotate(180deg);
+    } */
+
+    .nav-links.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     .nav-links ul {
@@ -323,6 +430,7 @@ p {
         color: var(--white);
         font-size: 1.4rem;
         cursor: pointer;
+        z-index: 1000;
     }
 
     /* the cards of services */
@@ -342,4 +450,12 @@ p {
     .call-to-action h1 {
         font-size: 1.25rem;
     }
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 75%;
+    }
+
 }

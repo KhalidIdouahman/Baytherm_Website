@@ -21,27 +21,29 @@
 <body>
 
     <section class="header">
-        <nav class="navbar">
-            <a href="index.html"><img id="logo" src="images/logo_img.jpg" alt="logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
-                <ul>
-                    <li> <a href="">Home</a></li>
-                    <li> <a href="">About Us</a></li>
-                    <li> <a href="">Services</a></li>
-                    <li><a href="">Contact Us</a></li>
+        <header id="main-header">
+            <nav class="navbar">
+                <a href="index.html"><img id="logo" src="images/logo_img.jpg" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <!-- <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i> -->
+                    <ul>
+                        <li> <a href="#">Home</a></li>
+                        <li> <a href="">About Us</a></li>
+                        <li> <a href="">Services</a></li>
+                        <li><a href="">Contact Us</a></li>
 
-                </ul>           
-            </div>
+                    </ul>           
+                </div>
                 <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
-        </nav> 
+            </nav> 
+        </header>
 
         <div class="text-box">
-            <h1>The <span id="title">Great Instalation Service</span><br/> You Really Want</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laboriosam repellat repellendus, 
+            <h1 class="anim">The <span id="title">Great Instalation Service</span><br/> You Really Want</h1>
+            <p class="anim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde laboriosam repellat repellendus, 
                 commodi impedit asperiores similique totam molestias velit,<br>  ipsa sunt sed quis magnam quam veniam cupiditate
                   sit reprehenderit dolores!</p>
-            <a href="" class="contact-btn">Contact Us</a>
+            <a href="" class="contact-btn anim">Contact Us</a>
         </div>
     </section>
 
@@ -177,9 +179,48 @@
     </section>
 
 
-    <section class="footer">
-        <div></div>
-    </section>
+<!-- footer section starts -->
+
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <!-- <img id="logo" src="images/logo_img.jpg" alt="logo"> -->
+            <h3>Baytherm</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, molestiae? Omnis eligendi ut quod nobis
+                . Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora alias adipisci incidunt quibusdam nulla harum!</p>
+        </div>
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#"> <i class="fas fa-angle-right"></i> Home</a>
+            <a href="#"> <i class="fas fa-angle-right"></i> Services</a>
+            <a href="#"> <i class="fas fa-angle-right"></i> About Us</a>
+            <a href="#"> <i class="fas fa-angle-right"></i> Contact Us</a>
+        </div>
+
+
+        <div class="box">
+            <h3>Get In Touch</h3>
+            <a href="#"> <i class="fa-solid fa-map-location-dot"></i> 87 , Daoudiate , Marrakech</a>
+            <a href="#"> <i class="fa-solid fa-phone"></i> 05 01 01 01 01</a>
+            <a href="#"> <i class="fa-solid fa-envelope"> </i> support@baytherm.com</a>
+        </div>
+
+        <div class="box">
+            <h3>Social Media</h3>
+            <a href="#"> <i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i> Twitter</a>
+            <a href="#"> <i class="fa-brands fa-square-instagram"></i> Instagram</a>
+        </div>
+    </div>
+
+    <div class="credit">Copyrights &copy; 2023  - All Rights Reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
 
 
 
