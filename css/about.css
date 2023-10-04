@@ -45,6 +45,7 @@
     border: 1px solid var(--main-red);
     padding: 0.75rem 2.2rem;
     font-size: 0.82rem;
+    font-weight: 800;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -70,3 +71,70 @@
     padding-bottom: 3rem;
 }
 
+/* contact us design */
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 5rem 0;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-column {
+    flex-basis: 48%;
+    padding-bottom: 2rem;
+}
+
+.contact-column div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.contact-column div .fa-solid {
+    font-size: 2rem;
+    margin: .9rem;
+    margin-right: 2.5rem;
+    color: var(--main-red);
+}
+
+.contact-column div p {
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.contact-column div h5 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+.contact-column .infos {
+    padding-right: 2rem;
+}
+
+.contact-column input , textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+/* To ensure responsiveness, you might also want a media query: */
+
+@media (max-width: 1250px) {
+    .contact-column div h5 {
+        font-size: 1rem;
+    }
+    .contact-column div p {
+        font-size: .8rem;
+    }
+}

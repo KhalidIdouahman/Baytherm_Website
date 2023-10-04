@@ -4,7 +4,6 @@
     --main-red: #f44336;
     --gredient-color : rgba(4,9,30 , 0.7);
     --card-color : #fff3f3;
-    --stars-color: #f44336;
 }
 
 * {
@@ -86,8 +85,8 @@ nav {
 }
 
 .nav-links ul li:hover::after {
-    width: 100%;
-    transition: 0.5s;
+    width: 80%;
+    transition: 0.5s ease-in-out;
 }
 
 nav .fa {
@@ -108,7 +107,7 @@ nav .fa {
 }
 
 .text-box h1 {
-    font-size: 3.25;
+    font-size: 3.25rem;
     /* animation */
     animation-delay: 0.5s;
 }
@@ -170,7 +169,7 @@ nav .fa {
 /* all the titles design */
 
 h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 600;
 }
 
@@ -303,7 +302,7 @@ p {
 }
 
 .feedbacks-column .fa-solid , .fa-regular {
-    color: var(--stars-color);
+    color: var(--main-red);
 }
 
 
