@@ -56,8 +56,17 @@
     color: var(--white);
 }
 
+/* Services design */
 
 
+.service {
+    width: 80%;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
 
-
+.service .about-column p {
+    padding-bottom: 3rem;
+}
 
