@@ -128,14 +128,15 @@ nav .fa {
 
 .contact-btn {
     display: inline-block;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: var(--white);
-    border: 1px solid ;
-    padding: 0.75rem 34px;
+    border: 1px solid var(--white);
+    padding: 0.75rem 2.2rem;
     font-size: 0.82rem;
     background: transparent;
     position: relative;
     cursor: pointer;
+    transition: .7s ease-in-out;
 }
 
 .contact-btn.anim {
@@ -146,7 +147,6 @@ nav .fa {
 .contact-btn:hover {
     border: 1px solid var(--main-red);
     background: var(--main-red);
-    transition: .7s;
 }
 
 /* the animation */

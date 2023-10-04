@@ -1,0 +1,63 @@
+
+@import url(style.css);
+
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(var(--gredient-color) , var(--gredient-color)) , url(/images/engineers.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--white);
+}
+
+.main-title {
+    margin-top: 7rem;
+}
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 3.2rem;
+}
+
+.about-column {
+    flex-basis: 48%;
+    padding: 2rem 0.125rem;
+}
+
+.about-column img {
+    width: 100%;
+}
+
+.about-column h1 {
+    padding-top: 0;
+}
+
+.about-column p {
+    padding: 1rem 0 1.5rem;
+}
+
+.explore-btn {
+    color: var(--main-red);
+    border: 1px solid var(--main-red);
+    padding: 0.75rem 2.2rem;
+    font-size: 0.82rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+}
+
+.explore-btn:hover {
+    background: var(--main-red);
+    color: var(--white);
+}
+
+
+
+
+
+
