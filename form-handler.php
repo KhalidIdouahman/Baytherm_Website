@@ -36,7 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
     $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
 
-    $email_from = 'baytherm@website.com';
+    // $email_from = 'baytherm@website.com';
+    $email_from = 'khalidmaxim2020@gmail.com';
 
     $email_subject = 'New Form Submission';
 

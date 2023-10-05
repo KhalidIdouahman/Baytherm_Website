@@ -1,4 +1,7 @@
 
+/* I was designing the website accoriding to my chrome that he has been resized to 75% and when i see it in 100% 
+it doesn't look good */
+
 :root {
     --white :#fff;
     --main-red: #f44336;
@@ -30,7 +33,7 @@
 
 /* logo size */
 #logo {
-    width: 3.75rem;
+    width: 2.8125rem; /* was 3.75rem */
 }
 
 /* navbar design */
@@ -52,7 +55,7 @@
 
 nav {
     display: flex;
-    padding: 2% 6%;
+    padding: 1.5% 4.5%; /* was 2% 6% */
     justify-content: space-between;
     align-items: center;
 }
@@ -71,14 +74,14 @@ nav {
 .nav-links ul li a {
     color: var(--white);
     text-decoration: none;
-    font-size: 0.82rem;
-    padding: 0.5rem 0.75rem;
+    font-size: 0.615rem; /* was 0.82rem */
+    padding: 0.375rem 0.5625rem; /* was 0.5rem 0.75rem */
 }
 
 .nav-links ul li::after {
     content: '';
     width: 0%;
-    height: 3px;
+    height: 2.5px;
     background: var(--main-red);
     display: block;
     margin: auto;
@@ -107,13 +110,13 @@ nav .fa {
 }
 
 .text-box h1 {
-    font-size: 3.25rem;
+    font-size: 2.4375rem; /* was 3.25rem */
     /* animation */
     animation-delay: 0.5s;
 }
 .text-box p {
-    margin: 0.7rem 0 2.5rem;
-    font-size: 0.9rem;
+    margin: 0.525rem 0 1.875rem; /* 0.7rem 0 2.5rem margins adjusted */
+    font-size: 0.7rem; /* was 0.9rem */
     color: var(--white);
     /* animation */
     animation-delay: 1s;
@@ -169,13 +172,13 @@ nav .fa {
 /* all the titles design */
 
 h1 {
-    font-size: 2.25rem;
+    font-size: 1.7rem; /* was 2.25rem */
     font-weight: 600;
 }
 
 p {
     color: #777;
-    font-size: 0.9rem;
+    font-size: 0.7rem ;
     font-weight: 300;
     line-height: 1.4rem;
     padding: 0.7rem;
@@ -187,11 +190,11 @@ p {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 6.25rem;
+    padding-top: 4.6875rem; /* was 6.25rem */
 }
 
 .row {
-    margin: 3%;
+    margin: 2.25%; /* was 3% */
     display: flex;
     justify-content: space-between;
 }
@@ -223,7 +226,7 @@ p {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 6.25rem;
+    padding-top: 4.6875rem; /* was 6.25rem */
 }
 
 
@@ -257,6 +260,10 @@ p {
     color: #666;
 }
 
+.facilities-column ul li {
+    font-size: 0.8rem;
+}
+
 /* test */
 .facilities-column:hover {
     box-shadow: 0 0 1.25rem 0px rgba(0,0,0 , 0.2);
@@ -270,7 +277,7 @@ p {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 6.25rem;
+    padding-top: 4.6875rem; /* was 6.25rem */
 }
 
 .feedbacks-column {
@@ -287,13 +294,13 @@ p {
 .feedbacks-column img {
     height: 2.5rem;
     /* width: 2.5rem; */
-    margin-left: 5px;
-    margin-right: 1.9rem;
+    margin-left: 0.4rem;  /* was 5px*/
+    margin-right: 1.425rem; /* was 1.9rem*/
     border-radius: 50%;
 }
 
 .feedbacks-column h3 {
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     text-align: left;
 }
 
@@ -309,19 +316,19 @@ p {
 /* call to action */
 
 .call-to-action {
-    margin: 6.25rem auto;
+    margin: 4.6875rem auto; /* was 6.25rem auto*/
     width: 80%;
     background-image: linear-gradient( rgba(0,0,0,0.7),  rgba(0,0,0,0.7))  , url(../images/engineers.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 0.7rem;
     text-align: center;
-    padding: 6.25rem 0;
+    padding: 4.6875rem 0; /* was 6.25rem 0*/
 }
 
 .call-to-action h1 {
     color: var(--white);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.875rem;  /* was 2.5rem*/
     padding: 0;
 }
 
@@ -330,32 +337,32 @@ p {
 
 .footer {
     background-color: var(--card-color);
-    padding: 5rem 5% 3rem;
+    padding: 3.75rem 5% 2.25rem; /* was 5rem 5% 3rem */
     /* height: 10rem; */
 }
 
 .footer .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(20rem , 1fr));
+    grid-template-columns: repeat(auto-fit , minmax(15rem , 1fr));
     gap: 3rem;
 }
 
 .footer .box-container .box h3 {
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1.125rem;  /* was 1.5rem*/
     padding-bottom: 2rem;
 }
 
 .footer .box-container .box p {
     color: #000;
-    font-size: 1rem;
+    font-size: 0.75rem; /* was 1rem */
     padding: 0;
 }
 
 .footer .box-container .box a {
     color: #000;
-    font-size: 1rem;
-    padding-bottom: 1rem;
+    font-size: 0.75rem; /* was 1rem */
+    padding-bottom: 0.75rem;  /* was 1rem*/
     display: block;
 }
 
@@ -367,16 +374,16 @@ p {
 }
 
 .footer .box-container .box a:hover i {
-    padding-right: 2rem;
+    padding-right: 1.5rem;  /* was 2rem*/
 }
 
 .credit {
     color: #000;
-    padding-top: 2.4rem;
-    margin-top: 2.4rem;
+    padding-top: 1.8rem; /* was 2.4rem */
+    margin-top: 1.8rem; /* was 2.4rem */
+    font-size: 0.9rem; /* was 1.2rem */
     border-top: 0.1rem solid #000;
     text-align: center;
-    font-size: 1.2rem;
 }
 
 
@@ -385,7 +392,7 @@ p {
 
 @media (max-width: 700px) {
     .text-box h1 {
-        font-size: 1.9rem;
+        font-size: 1.425rem; /* was 1.9rem */
     }
 
     /* designing the menu */
@@ -409,6 +416,13 @@ p {
         clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     }
 
+    .nav-links ul li a {
+        font-size: 0.8rem;
+    }
+
+    .nav-links ul li {
+        margin-top: 0.8rem;
+    }
     /* .navbar i {
         transform: rotate(180deg);
     } */
@@ -418,7 +432,7 @@ p {
     }
 
     .nav-links ul {
-        padding: 1.9rem;
+        padding: 2rem;
     }
 
     /* for the menu icons in small screen */
@@ -432,22 +446,28 @@ p {
         z-index: 1000;
     }
 
-    /* the cards of services */
+    /* the cards of services , the about section with its img ,
+     the contact form and the infos , and the services page */
 
     .row {
         flex-direction: column;
     }
 
+    /* all the titles */
+
+    h1 {
+        font-size: 1.7rem;
+    }
     /* for the feedbacks */
 
     .feedbacks-column img {
-        height: 2.5rem;
+        height: 1.875rem; /* was 2.5rem */
         margin-left: 0px;
         margin-right: 1rem;
     }
 
     .call-to-action h1 {
-        font-size: 1.25rem;
+        font-size: 0.9rem; /* was 1.25rem*/
     }
 }
 
