@@ -27,6 +27,7 @@
 // header("Location : contact.html");
 
 // improved by chatgbt
+// but it doesn't work
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
