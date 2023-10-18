@@ -59,7 +59,7 @@
 //     } else {
 //         echo "Mail sending failed.";
 //     }
-}
+// }
 
 
 
