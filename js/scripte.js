@@ -31,3 +31,11 @@ menuBtn.onclick = () => {
 //     }
 // });
 
+// after submission of the form , it should have cleard
+
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
+

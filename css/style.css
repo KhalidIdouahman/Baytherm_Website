@@ -25,7 +25,7 @@ it doesn't look good */
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(var(--gredient-color) , var(--gredient-color))  , url(../images/villa_3.jpg);
+    background-image: linear-gradient(var(--gredient-color) , var(--gredient-color))  , url(../images/villa.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -33,7 +33,7 @@ it doesn't look good */
 
 /* logo size */
 #logo {
-    width: 2.8125rem; /* was 3.75rem */
+    width: 6rem; /* was 3.75rem */
 }
 
 /* navbar design */
@@ -57,7 +57,7 @@ nav {
     display: flex;
     padding: 1.5% 4.5%; /* was 2% 6% */
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .nav-links {
@@ -69,6 +69,7 @@ nav {
     list-style: none;
     display: inline-block;
     position: relative;
+    margin-top: 2rem;
 }
 
 .nav-links ul li a {
@@ -116,7 +117,7 @@ nav .fa {
 }
 .text-box p {
     margin: 0.525rem 0 1.875rem; /* 0.7rem 0 2.5rem margins adjusted */
-    font-size: 0.7rem; /* was 0.9rem */
+    font-size: 0.9rem; /* was 0.9rem */
     color: var(--white);
     /* animation */
     animation-delay: 1s;
@@ -177,7 +178,7 @@ h1 {
 }
 
 p {
-    color: #777;
+    color: #444;
     font-size: 0.7rem ;
     font-weight: 300;
     line-height: 1.4rem;
@@ -267,6 +268,8 @@ p {
 /* test */
 .facilities-column:hover {
     box-shadow: 0 0 1.25rem 0px rgba(0,0,0 , 0.2);
+    /* testing the card */
+    transform: scale(1.05);
 }
 
 
@@ -287,7 +290,7 @@ p {
     text-align: left;
     background: var(--card-color);
     padding: 1.6rem;
-    cursor: pointer;
+    /* cursor: pointer; */
     display: flex;
 }
 
@@ -387,8 +390,22 @@ p {
 }
 
 
+/* sub titles style */
+
+.sub-title-desc {
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: 70%;
+    margin: auto;
+}
 
 /* making the website responsive */
+
+@media (max-width: 900px) {
+    .facilities .row {
+        flex-direction: column;
+    }
+}
 
 @media (max-width: 700px) {
     .text-box h1 {
@@ -440,17 +457,31 @@ p {
     nav .fa {
         display: block;
         margin: 0.7rem;
+        margin-top: 2rem;
         color: var(--white);
         font-size: 1.4rem;
         cursor: pointer;
         z-index: 1000;
     }
 
-    /* the cards of services , the about section with its img ,
-     the contact form and the infos , and the services page */
+    /* the cards of services , the contact form and the infos , and the services page */
 
     .row {
         flex-direction: column;
+    }
+    
+    .service-column , .facilities-column {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    /* this to get the images of services below the content  */
+
+    .service .row .about-column.reversed:first-child {
+        order: 1;  /* Content always first */
+    }
+    .service .row .about-column.reversed:last-child {
+        order: 2;  /* Image always second */
     }
 
     /* all the titles */
@@ -469,6 +500,11 @@ p {
     .call-to-action h1 {
         font-size: 0.9rem; /* was 1.25rem*/
     }
+
+    .sub-title-desc {
+        width: 90%;
+    }
+
 }
 
 @media (max-width:450px) {
@@ -477,4 +513,8 @@ p {
         font-size: 75%;
     }
 
+
 }
+
+
+
