@@ -30,33 +30,35 @@
 // but it doesn't work
 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// this file has no effect .
 
-    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-    $visitor_email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-    $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
-    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    // $email_from = 'baytherm@website.com';
-    $email_from = 'khalidmaxim2020@gmail.com';
+//     $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+//     $visitor_email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+//     $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
+//     $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
 
-    $email_subject = 'New Form Submission';
+//     // $email_from = 'baytherm@website.com';
+//     $email_from = 'khalidmaxim2020@gmail.com';
 
-    $email_body = "User Name: $name.\n".
-                  "User Email: $visitor_email.\n".
-                  "Subject: $subject.\n".
-                  "User Message: $message.\n";
+//     $email_subject = 'New Form Submission';
 
-    $to = 'khalidwebsites2023@gmail.com';
+//     $email_body = "User Name: $name.\n".
+//                   "User Email: $visitor_email.\n".
+//                   "Subject: $subject.\n".
+//                   "User Message: $message.\n";
 
-    $headers = "From: $email_from \r\n";
-    $headers .= "Reply-To: $visitor_email \r\n";
+//     $to = 'khalidwebsites2023@gmail.com';
 
-    if(mail($to, $email_subject, $email_body, $headers)) {
-        header("Location: contact.html");
-    } else {
-        echo "Mail sending failed.";
-    }
+//     $headers = "From: $email_from \r\n";
+//     $headers .= "Reply-To: $visitor_email \r\n";
+
+//     if(mail($to, $email_subject, $email_body, $headers)) {
+//         header("Location: contact.html");
+//     } else {
+//         echo "Mail sending failed.";
+//     }
 }
 
 
